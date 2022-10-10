@@ -53,5 +53,14 @@
       "baseName" : "testlitev4",
       "serverPort" : 8080
     }
+  }, {
+    "module" : "sonar-java-backend",
+    "date" : "2022-10-10T18:40:47.333421246Z",
+    "properties" : {
+      "packageName" : "co.com.ies.smolplus",
+      "projectName" : "testlitev4",
+      "baseName" : "testlitev4",
+      "serverPort" : 8080
+    }
   } ]
 }
