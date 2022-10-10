@@ -52,6 +52,7 @@ docker compose -f src/main/docker/postgresql.yml up -d
 - [Jpa pages](documentation/jpa-pages.md)
 - [Cucumber](documentation/cucumber.md)
 - [Cucumber authentication](documentation/cucumber-authentication.md)
+- [Dummy](documentation/dummy.md)
 
 <!-- jhipster-needle-documentation -->
 
