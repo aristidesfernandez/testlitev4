@@ -197,5 +197,14 @@
       "baseName" : "testlitev4",
       "serverPort" : 8080
     }
+  }, {
+    "module" : "spring-boot-cucumber-jpa-reset",
+    "date" : "2022-10-10T18:40:47.795387443Z",
+    "properties" : {
+      "packageName" : "co.com.ies.smolplus",
+      "projectName" : "testlitev4",
+      "baseName" : "testlitev4",
+      "serverPort" : 8080
+    }
   } ]
 }
