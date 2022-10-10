@@ -26,5 +26,14 @@
       "baseName" : "testlitev4",
       "serverPort" : 8080
     }
+  }, {
+    "module" : "prettier",
+    "date" : "2022-10-10T18:40:47.250366392Z",
+    "properties" : {
+      "packageName" : "co.com.ies.smolplus",
+      "projectName" : "testlitev4",
+      "baseName" : "testlitev4",
+      "serverPort" : 8080
+    }
   } ]
 }
