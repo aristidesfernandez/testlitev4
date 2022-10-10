@@ -49,6 +49,7 @@ docker compose -f src/main/docker/postgresql.yml up -d
 - [Dev tools](documentation/dev-tools.md)
 - [CORS configuration](documentation/cors-configuration.md)
 - [Jpa pages](documentation/jpa-pages.md)
+- [Cucumber](documentation/cucumber.md)
 
 <!-- jhipster-needle-documentation -->
 
