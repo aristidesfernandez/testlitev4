@@ -179,5 +179,14 @@
       "baseName" : "testlitev4",
       "serverPort" : 8080
     }
+  }, {
+    "module" : "springdoc-mvc-openapi",
+    "date" : "2022-10-10T18:40:47.736402029Z",
+    "properties" : {
+      "packageName" : "co.com.ies.smolplus",
+      "projectName" : "testlitev4",
+      "baseName" : "testlitev4",
+      "serverPort" : 8080
+    }
   } ]
 }
