@@ -32,22 +32,5 @@ class CacheConfigurationTest {
     verify(cm).createCache(eq("shouldCreateDefaultCache"), any());
   }
 
-  @Test
-  void shouldCreateCustomCache() {
-    CacheConfiguration.createCache(cm, "shouldCreateCustomCache", customConfig);
-    verify(cm).createCache("shouldCreateCustomCache", customConfig);
-  }
 
-  @Test
-  void shouldClearExistingCache() {
-    // given an existing cache "test"
-    doReturn(cache).when(cm).getCache("shouldClearExistingCache");
-
-    // when attempting to create a new cache "test"
-    CacheConfiguration.createCache(cm, "shouldClearExistingCache", customConfig);
-
-    // then destroy and create cache "test"
-    verify(cache).clear();
-    verify(cm, never()).createCache("shouldClearExistingCache", customConfig);
-  }
 }
