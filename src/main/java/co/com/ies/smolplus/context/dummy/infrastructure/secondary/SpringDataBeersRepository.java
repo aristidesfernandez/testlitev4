@@ -23,6 +23,8 @@ class SpringDataBeersRepository implements BeersRepository {
   public void save(Beer beer) {
     Assert.notNull("beer", beer);
 
+    
+
     beers.save(BeerEntity.from(beer));
   }
 

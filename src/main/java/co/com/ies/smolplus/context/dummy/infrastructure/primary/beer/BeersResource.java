@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import co.com.ies.smolplus.context.dummy.application.BeersApplicationService;
 import co.com.ies.smolplus.context.dummy.domain.BeerId;
 import co.com.ies.smolplus.context.dummy.domain.beer.Beer;
+import co.com.ies.smolplus.context.dummy.domain.beer.BeerToCreate;
 
 @RestController
 @Tag(name = "Beers")
@@ -33,8 +34,11 @@ class BeersResource {
   @PostMapping
   @Operation(summary = "Add a beer to the catalog")
   @ApiResponse(description = "Beer added to the catalog", responseCode = "201")
-  ResponseEntity<RestBeer> addBeer(@Validated @RequestBody RestBeerToCreate beerToCreate) {
-    Beer createdBeer = beers.create(beerToCreate.toDomain());
+  ResponseEntity<RestBeer> addBeer(@Validated @RequestBody RestBeerToCreate restBeerToCreate) {
+
+    BeerToCreate beerToCreate = restBeerToCreate.toDomain();
+
+    Beer createdBeer = beers.create(beerToCreate);
 
     return new ResponseEntity<>(RestBeer.from(createdBeer), HttpStatus.CREATED);
   }

@@ -29,7 +29,10 @@ public class BeersApplicationService {
 
   @Transactional
   public Beer create(BeerToCreate beerToCreate) {
+
     return creator.create(beerToCreate);
+
+    
   }
   
   @Transactional
