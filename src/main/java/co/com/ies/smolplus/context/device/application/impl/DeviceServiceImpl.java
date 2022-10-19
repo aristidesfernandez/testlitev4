@@ -31,8 +31,10 @@ public class DeviceServiceImpl implements DeviceService {
     @Override
     public DeviceDTO save(DeviceDTO deviceDTO) {
 
-        //validar en el dominio
-        Device device = deviceMapper.toEntity(deviceDTO);   
+        //transformación de dto a modelo de domiio
+        Device device = deviceMapper.toEntity(deviceDTO); 
+
+        // llamadas a casos usos
         Device deviceCreated = createDevice.create(device);
 
         return deviceMapper.toDto(deviceCreated) ;

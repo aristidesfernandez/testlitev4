@@ -6,14 +6,8 @@ import java.util.UUID;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
-import org.hibernate.annotations.Cache;
-import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 
-@Entity
-@Table(name = "device")
-@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
-@SuppressWarnings("common-java:DuplicatedBlocks")
 public class Device implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -61,6 +55,9 @@ public class Device implements Serializable {
     public void setSerial(String serial) {
         this.serial = serial;
     }
+
+
+    
 
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here
 

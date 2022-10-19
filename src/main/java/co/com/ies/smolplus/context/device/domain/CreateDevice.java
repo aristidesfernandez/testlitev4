@@ -10,12 +10,12 @@ public class CreateDevice {
         this.deviceRepository = deviceRepository;
     }
 
-
     public Device create(Device device) {
     
-        // validar para poder crear    
-           
+        // validar para poder crear           
+          
         device.setId(UUID.randomUUID());
+
         deviceRepository.save(device);
 
         return device;

@@ -14,6 +14,7 @@ import co.com.ies.smolplus.error.domain.Assert;
 public class SpringDataDeviceRepository implements DeviceRepository {  
 
   private final JpaDeviceRepository jpaDeviceRepository;
+
   private DeviceEntityMapper deviceEntityMapper;
  
   public SpringDataDeviceRepository(JpaDeviceRepository jpaDeviceRepository, DeviceEntityMapper deviceEntityMapper) {
@@ -23,8 +24,11 @@ public class SpringDataDeviceRepository implements DeviceRepository {
 
   @Override
   public void save(Device device) {
-    Assert.notNull("device", device);    
+
+    Assert.notNull("device", device);  
+    // mapear objeto dominio a objeto de BD  
     DeviceEntity deviceEntity = deviceEntityMapper.toEntity(device);
+
     jpaDeviceRepository.save(deviceEntity);
   }
 

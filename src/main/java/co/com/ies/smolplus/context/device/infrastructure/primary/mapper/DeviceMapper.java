@@ -9,5 +9,7 @@ import co.com.ies.smolplus.technical.infrastructure.primary.mapper.DomainMapper;
 
 
 @Mapper(componentModel = "spring")
-public interface DeviceMapper extends DomainMapper<DeviceDTO, Device> {}
+public interface DeviceMapper extends DomainMapper<DeviceDTO, Device> {
+    
+}
     

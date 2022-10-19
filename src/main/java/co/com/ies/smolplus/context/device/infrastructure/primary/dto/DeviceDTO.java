@@ -4,22 +4,11 @@ import java.io.Serializable;
 import java.util.Objects;
 import java.util.UUID;
 
-
-@SuppressWarnings("common-java:DuplicatedBlocks")
 public class DeviceDTO implements Serializable {
     
-    public DeviceDTO(UUID id, String serial){
-        this.id = id;
-        this.serial = serial;
-    }
-    
-    public DeviceDTO() {
-    }
-
     private UUID id;
 
-    private String serial;
-  
+    private String serial;  
 
     public UUID getId() {
         return id;
