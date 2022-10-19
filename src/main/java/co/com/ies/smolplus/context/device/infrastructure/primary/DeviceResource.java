@@ -3,6 +3,7 @@ package co.com.ies.smolplus.context.device.infrastructure.primary;
 
 import java.net.URISyntaxException;
 import java.util.Optional;
+import java.util.UUID;
 
 import javax.validation.Valid;
 
@@ -42,7 +43,7 @@ public class DeviceResource {
 
 
     @GetMapping("/devices/{id}")
-    public ResponseEntity<DeviceDTO> getDevice(@PathVariable Long id) {
+    public ResponseEntity<DeviceDTO> getDevice(@PathVariable UUID id) {
         log.debug("REST request to get Device : {}", id);
         Optional<DeviceDTO> oDeviceDTO = deviceService.findOne(id);
         DeviceDTO result = oDeviceDTO.orElseGet(DeviceDTO::new);

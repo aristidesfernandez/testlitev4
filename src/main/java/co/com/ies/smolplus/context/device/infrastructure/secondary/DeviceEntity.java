@@ -16,16 +16,16 @@ import co.com.ies.smolplus.error.domain.Assert;
 @Table(name = "device")
 @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 @SuppressWarnings("common-java:DuplicatedBlocks")
-public class DeviceEnity implements Serializable {
+public class DeviceEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public DeviceEnity(UUID id, @NotNull String serial) {
+    public DeviceEntity(UUID id, @NotNull String serial) {
         this.id = id;
         this.serial = serial;
     }
 
-    public DeviceEnity() {
+    public DeviceEntity() {
     }
 
     @Id
@@ -42,7 +42,7 @@ public class DeviceEnity implements Serializable {
         return this.id;
     }
 
-    public DeviceEnity id(UUID id) {
+    public DeviceEntity id(UUID id) {
         this.setId(id);
         return this;
     }
@@ -55,7 +55,7 @@ public class DeviceEnity implements Serializable {
         return this.serial;
     }
 
-    public DeviceEnity serial(String serial) {
+    public DeviceEntity serial(String serial) {
         this.setSerial(serial);
         return this;
     }
@@ -64,10 +64,10 @@ public class DeviceEnity implements Serializable {
         this.serial = serial;
     }
 
-    public static DeviceEnity from(Device device) {
+    public static DeviceEntity from(Device device) {
         Assert.notNull("device", device);
     
-        return new DeviceEnity().id(device.getId()).serial(device.getSerial());
+        return new DeviceEntity().id(device.getId()).serial(device.getSerial());
       }
     
     @Override
@@ -75,10 +75,10 @@ public class DeviceEnity implements Serializable {
         if (this == o) {
             return true;
         }
-        if (!(o instanceof DeviceEnity)) {
+        if (!(o instanceof DeviceEntity)) {
             return false;
         }
-        return id != null && id.equals(((DeviceEnity) o).id);
+        return id != null && id.equals(((DeviceEntity) o).id);
     }
 
     @Override

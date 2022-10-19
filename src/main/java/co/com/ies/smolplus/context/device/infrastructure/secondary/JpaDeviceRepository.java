@@ -1,6 +1,8 @@
 package co.com.ies.smolplus.context.device.infrastructure.secondary;
 
 
+import java.util.UUID;
+
 import org.springframework.data.jpa.repository.*;
 import org.springframework.stereotype.Repository;
 
@@ -9,6 +11,6 @@ import org.springframework.stereotype.Repository;
  */
 @SuppressWarnings("unused")
 @Repository
-public interface JpaDeviceRepository extends JpaRepository<DeviceEnity, Long>, JpaSpecificationExecutor<DeviceEnity> {
+public interface JpaDeviceRepository extends JpaRepository<DeviceEntity, UUID>, JpaSpecificationExecutor<DeviceEntity> {
     
 }

@@ -1,6 +1,6 @@
 package co.com.ies.smolplus.context.device.domain;
 
-
+import java.util.UUID;
 
 public class CreateDevice {
 
@@ -15,7 +15,7 @@ public class CreateDevice {
     
         // validar para poder crear    
            
-    
+        device.setId(UUID.randomUUID());
         deviceRepository.save(device);
 
         return device;
