@@ -1,7 +1,6 @@
 package co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.application.impl;
 
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.application.ManagerRequestBingoDataService;
 import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.domain.GenerateBetBingo;
@@ -10,7 +9,6 @@ import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.infrastr
 import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.domain.ForeingBingoDataDomain;
 
 @Service
-@Transactional
 public class ManagerRequestBingoDataServiceImpl implements ManagerRequestBingoDataService {
 
     private final ForeingBingoDataDomain foreingBingoDataDomain;

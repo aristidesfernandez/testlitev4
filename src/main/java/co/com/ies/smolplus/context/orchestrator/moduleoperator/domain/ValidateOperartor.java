@@ -4,17 +4,12 @@ import co.com.ies.smolplus.context.orchestrator.moduleoperator.infrastructure.pr
 
 public class ValidateOperartor {
 
-
-    private final ForeingOperatorDomain foreingOperatorDomain;
-
     private final AccountOperatorDTO accountFull = new AccountOperatorDTO();
 
-    public ValidateOperartor(ForeingOperatorDomain foreingOperatorDomain){ 
-        this.foreingOperatorDomain = foreingOperatorDomain;
+    public ValidateOperartor(){
         this.accountFull.setUsername("user");
         this.accountFull.setPassword("pass");
     }
-
     
     public boolean validateOperartor(AccountOperatorDTO account){       
        return account.equals(accountFull);
