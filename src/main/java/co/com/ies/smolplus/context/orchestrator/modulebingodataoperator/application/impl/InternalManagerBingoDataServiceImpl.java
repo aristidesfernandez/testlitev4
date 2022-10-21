@@ -3,13 +3,21 @@ package co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.applica
 import org.springframework.stereotype.Service;
 
 import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.application.InternalManagerBingoDataService;
+import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.domain.registro.GetRegistro;
+import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.infrastructure.primary.dto.RegistroDTO;
 
 @Service
 public class InternalManagerBingoDataServiceImpl implements InternalManagerBingoDataService {
 
-   
-    public InternalManagerBingoDataServiceImpl(){ 
-    }
-    
-   
+	private final GetRegistro getRegistro;
+
+	public InternalManagerBingoDataServiceImpl() {
+		this.getRegistro = new GetRegistro();
+	}
+
+	@Override
+	public RegistroDTO getRegistroById(Long idRegistro) {
+		return getRegistro.getRegistroById(idRegistro);
+	}
+
 }

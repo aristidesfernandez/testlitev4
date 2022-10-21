@@ -2,6 +2,7 @@ package co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.applica
 
 import org.springframework.stereotype.Service;
 
+import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.application.InternalManagerBingoDataService;
 import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.application.ManagerRequestBingoDataService;
 import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.domain.GenerateBetBingo;
 import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.domain.IsGame;
@@ -12,11 +13,13 @@ import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.domain.F
 public class ManagerRequestBingoDataServiceImpl implements ManagerRequestBingoDataService {
 
     private final ForeingBingoDataDomain foreingBingoDataDomain;
+    private final InternalManagerBingoDataService internalManagerBingoDataService;
     private final GenerateBetBingo generateBetBingo;
     private final IsGame isGame;
 
-    public ManagerRequestBingoDataServiceImpl(ForeingBingoDataDomain foreingBingoDataDomain) {
+    public ManagerRequestBingoDataServiceImpl(ForeingBingoDataDomain foreingBingoDataDomain, InternalManagerBingoDataService internalManagerBingoDataService) {
         this.foreingBingoDataDomain = foreingBingoDataDomain;
+        this.internalManagerBingoDataService = internalManagerBingoDataService;
         this.generateBetBingo = new GenerateBetBingo(foreingBingoDataDomain);
         this.isGame = new IsGame(foreingBingoDataDomain);
     }
