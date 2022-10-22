@@ -1,4 +1,4 @@
-package co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.infrastructure.primary.dto;
+package co.com.ies.smolplus.dto.modulebingodataoperator;
 
 import java.time.ZonedDateTime;
 import java.util.Objects;

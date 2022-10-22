@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.application.InternalManagerBingoDataService;
 import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.domain.registro.GetRegistro;
-import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.infrastructure.primary.dto.RegistroDTO;
+import co.com.ies.smolplus.dto.modulebingodataoperator.RegistroDTO;
 
 @Service
 public class InternalManagerBingoDataServiceImpl implements InternalManagerBingoDataService {

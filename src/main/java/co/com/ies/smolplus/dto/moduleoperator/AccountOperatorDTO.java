@@ -1,4 +1,4 @@
-package co.com.ies.smolplus.context.orchestrator.moduleoperator.infrastructure.primary;
+package co.com.ies.smolplus.dto.moduleoperator;
 
 import java.io.Serializable;
 

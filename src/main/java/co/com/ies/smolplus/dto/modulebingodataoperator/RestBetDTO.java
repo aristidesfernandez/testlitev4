@@ -1,8 +1,8 @@
-package co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.infrastructure.primary.dto;
+package co.com.ies.smolplus.dto.modulebingodataoperator;
 
 import java.io.Serializable;
 
-import co.com.ies.smolplus.context.orchestrator.moduleoperator.infrastructure.primary.AccountOperatorDTO;
+import co.com.ies.smolplus.dto.moduleoperator.AccountOperatorDTO;
 
 public class RestBetDTO implements Serializable {    
     

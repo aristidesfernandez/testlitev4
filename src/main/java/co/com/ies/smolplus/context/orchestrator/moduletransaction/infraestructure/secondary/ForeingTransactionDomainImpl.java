@@ -3,9 +3,9 @@ package co.com.ies.smolplus.context.orchestrator.moduletransaction.infraestructu
 import org.springframework.stereotype.Service;
 
 import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.application.InternalManagerBingoDataService;
-import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.infrastructure.primary.dto.RegistroDTO;
 import co.com.ies.smolplus.context.orchestrator.moduletransaction.domain.ForeingTransactionDomain;
-import co.com.ies.smolplus.context.orchestrator.moduletransaction.infraestructure.primary.dto.EventLogDTO;
+import co.com.ies.smolplus.dto.modulebingodataoperator.RegistroDTO;
+import co.com.ies.smolplus.dto.moduletransaction.EventLogDTO;
 
 @Service
 public class ForeingTransactionDomainImpl implements ForeingTransactionDomain {

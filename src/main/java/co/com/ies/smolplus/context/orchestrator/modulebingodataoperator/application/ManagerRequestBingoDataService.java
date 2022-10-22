@@ -1,6 +1,6 @@
 package co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.application;
 
-import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.infrastructure.primary.dto.RestBetDTO;
+import co.com.ies.smolplus.dto.modulebingodataoperator.RestBetDTO;
 
 public interface ManagerRequestBingoDataService {
 

@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.infrastructure.primary.dto.RegistroDTO;
 import co.com.ies.smolplus.context.orchestrator.moduletransaction.application.ManagerRequestTransactionService;
-import co.com.ies.smolplus.context.orchestrator.moduletransaction.infraestructure.primary.dto.EventLogDTO;
+import co.com.ies.smolplus.dto.modulebingodataoperator.RegistroDTO;
+import co.com.ies.smolplus.dto.moduletransaction.EventLogDTO;
 
 @RestController
 @RequestMapping("/api/orchestrator/transaction")

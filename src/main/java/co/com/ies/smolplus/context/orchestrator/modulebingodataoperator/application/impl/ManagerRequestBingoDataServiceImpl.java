@@ -6,7 +6,7 @@ import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.applicat
 import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.application.ManagerRequestBingoDataService;
 import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.domain.GenerateBetBingo;
 import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.domain.IsGame;
-import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.infrastructure.primary.dto.RestBetDTO;
+import co.com.ies.smolplus.dto.modulebingodataoperator.RestBetDTO;
 import co.com.ies.smolplus.context.orchestrator.modulebingodataoperator.domain.ForeingBingoDataDomain;
 
 @Service

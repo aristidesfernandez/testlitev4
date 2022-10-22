@@ -1,4 +1,4 @@
-package co.com.ies.smolplus.context.orchestrator.moduletransaction.infraestructure.primary.dto;
+package co.com.ies.smolplus.dto.moduletransaction;
 
 import java.util.Objects;
 
