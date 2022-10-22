@@ -9,8 +9,8 @@ import co.com.ies.smolplus.context.device.application.DeviceService;
 import co.com.ies.smolplus.context.device.domain.CreateDevice;
 import co.com.ies.smolplus.context.device.domain.Device;
 import co.com.ies.smolplus.context.device.domain.DeviceRepository;
-import co.com.ies.smolplus.context.device.infrastructure.primary.dto.DeviceDTO;
 import co.com.ies.smolplus.context.device.infrastructure.primary.mapper.DeviceMapper;
+import co.com.ies.smolplus.dto.moduledevice.DeviceDTO;
 
 import java.util.UUID;
 

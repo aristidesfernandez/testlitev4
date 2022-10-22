@@ -1,7 +1,6 @@
 package co.com.ies.smolplus.context.device.infrastructure.primary;
 
 
-import java.net.URISyntaxException;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -18,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import co.com.ies.smolplus.context.device.application.DeviceService;
-import co.com.ies.smolplus.context.device.infrastructure.primary.dto.DeviceDTO;
+import co.com.ies.smolplus.dto.moduledevice.DeviceDTO;
 
 @RestController
 @RequestMapping("/api")

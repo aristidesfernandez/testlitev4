@@ -1,4 +1,4 @@
-package co.com.ies.smolplus.context.device.infrastructure.primary.dto;
+package co.com.ies.smolplus.dto.moduledevice;
 
 import java.io.Serializable;
 import java.util.Objects;

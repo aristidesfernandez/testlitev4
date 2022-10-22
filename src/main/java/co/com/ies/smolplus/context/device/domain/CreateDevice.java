@@ -21,8 +21,4 @@ public class CreateDevice {
         return device;
       }
 
-
-
-  
-    
 }
